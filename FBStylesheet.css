@@ -50,7 +50,7 @@ body {
     background-color: rgb(234, 235, 237);
     display:flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     padding: 10px;
     margin-top: 20px;
 }
@@ -101,7 +101,7 @@ body {
 }
 
 .posts__ID--text:hover{
-    text-decoration: underline
+    text-decoration: none;
 }
 
 .posts__content{
@@ -113,10 +113,35 @@ body {
     background: white;
 }
 
+.posts__react {
+    display:flex;
+    border: 1px solid rgb(228, 228, 228);
+    background: white;
+    padding: 10px;
+}
+
+.posts__react__buttons {
+    display: flex;
+    align-items: center;
+}
+
+.posts__react--text {
+    font: bold 15px Arial;
+    color: rgb(97, 103, 111);
+    padding-left: 15px;
+    text-decoration: none;
+}
+
+.posts__react--text:hover {
+    background-color: rgb(228, 228, 228);
+    border: 1px solid rgb(228, 228, 228);
+    padding: 3px;
+}
+
 .ads {
     width: 100%;
     display: flex;
-    margin-top: 30px;
+    margin-top: 15px;
     flex-direction: column;
     
 }
@@ -126,6 +151,7 @@ body {
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
+    margin-top: 15px;
     border: 1px solid rgb(228, 228, 228);
     background-color: white;
     padding: 10px;
@@ -133,7 +159,9 @@ body {
 }
 
 .ads__instance--img{
-    height: 100px;
+    height: auto;
+    width: auto;
+    max-height: 100px;
 }
 
 .ads__instance--links{
@@ -157,6 +185,7 @@ body {
 @media (min-width: 768px){
     .menu{
         width: 25%;
+        align-items: flex-end;
     }
     .posts{
         width: 48%;
